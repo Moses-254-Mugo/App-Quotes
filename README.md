@@ -1,4 +1,8 @@
 # Quotes
+Quotes is a website application that allows users to add their own quotes, displays the quotes and upvote and downvole the existing quotes.
+
+# Author
+Moses Kinyua
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
 
