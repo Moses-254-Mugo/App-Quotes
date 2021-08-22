@@ -2,11 +2,13 @@
     <div class="row">
         <div *ngFor='let q of list_of_quotes'>
             {{q.author}}
-
+            {{q.name}}
+            {{q.description}}
+            
         </div>
+        <button  class="btn btn-primary">View More..</button>
         <div>
-            <p><b>Name</b> {{quote.name}}</p>
-            <button (click)='quoteDelete(true)' class="btn btn-danger">Delete</button>
+            
         </div>
     </div>
 </div>
