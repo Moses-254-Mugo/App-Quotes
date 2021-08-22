@@ -6,24 +6,25 @@
     color: #fff;
   }
   .logo {
-    font-size: px;
-    margin: 20px;
+    font-size: 20px;
+    margin-left: 20px;
   }
   .menu ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
+    margin-right: 20px;
   }
   .menu li {
     list-style: none;
+    float: left;
   }
   .menu li a {
     text-decoration: none;
     color: #fff;
-    padding: 14px 10px;
+    padding: 14px 16px;
     display: block;
   }
   .menu li a:hover {
     background-color: #fff;
     color:#1569C7 ;
+    font-size: 19px;
   }
+  
