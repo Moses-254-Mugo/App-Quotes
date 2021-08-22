@@ -1,0 +1,15 @@
+#quotes{
+    margin-top: 30px;
+    padding: 20px;
+}
+.btn{
+    margin-top: 20px;
+}
+form{
+    padding: 35px;
+    box-shadow: 0 0 2px #000;
+    border-radius: 10px;
+}
+form:hover{
+    box-shadow:0 0 8px #000 ;
+}
