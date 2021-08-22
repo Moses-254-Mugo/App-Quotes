@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+import { QuoteComponent } from './quote/quote.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationBarComponent,
     HomepageComponent,
-    QuoteFormComponent
+    QuoteFormComponent,
+    QuoteDetailsComponent,
+    QuoteComponent
   ],
   imports: [
     BrowserModule,

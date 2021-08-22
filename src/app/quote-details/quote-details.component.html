@@ -1,0 +1,14 @@
+<div class="container text-center" id="quote-details">
+    <div class="row">
+        <div *ngFor='let q of list_of_quotes'>
+            {{q.author}}
+
+        </div>
+        <div>
+            <p><b>Name</b> {{quote.name}}</p>
+            <button (click)='quoteDelete(true)' class="btn btn-danger">Delete</button>
+        </div>
+    </div>
+</div>
+    
+
