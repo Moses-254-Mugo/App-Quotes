@@ -1,0 +1,37 @@
+#footer{
+    width: 100%;
+    background: linear-gradient(to right, #1569C7, #2d0b00);
+    color: #fff;
+    padding: 40px;
+    border-top-left-radius: 110px;
+    margin-top: 40px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.media{
+    /* border-bottom: 2px solid #fff; */
+    /* margin-bottom: 20px ; */
+}
+.media img{
+    width: 100%;
+    border-radius: 50%;
+}
+.media ul{
+    list-style-type: none;
+}
+.media li{
+    float: left;
+    margin: 10px;
+}
+.media li img:hover{
+    box-shadow: 0 0 8px #ccc;
+}
+.copyright{
+    text-align: center;
+}
