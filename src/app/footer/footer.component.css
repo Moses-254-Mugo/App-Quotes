@@ -14,8 +14,8 @@
     flex-wrap: wrap;
     width: 80%;
 }
-.media{
-    border-bottom: 2px solid #fff;
+.copyright{
+    border-top: 2px solid #fff;
     margin-bottom: 20px ;
 }
 .media img{
