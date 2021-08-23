@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
-import { QuoteDetailsComponent } from './quote-details/quote-details.component';
-import { QuoteComponent } from './quote/quote.component';
 import { FooterComponent } from './footer/footer.component';
+import { QuoteComponent } from './quote/quote.component';
+import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
+import { DateCountPipe } from './date-count.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,16 @@ import { FooterComponent } from './footer/footer.component';
     NavigationBarComponent,
     HomepageComponent,
     QuoteFormComponent,
-    QuoteDetailsComponent,
+    FooterComponent,
     QuoteComponent,
-    FooterComponent
+    QuoteDetailComponent,
+    DateCountPipe
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

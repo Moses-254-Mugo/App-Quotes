@@ -1,19 +1,8 @@
-#display-Quotes{
-    margin-top: 60px;
-    /* background-color:#bbb ; */
-}
-.row{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-#output-quotes{
-    border: 1px solid #000;
-    margin: 10px;
-    padding: 20px;
-    box-shadow: 0 0 1px #000;
+.content{
+    width: 300px;
+    box-shadow: 0 0 4px #ccc;
     text-align: center;
-}
-#output-quotes:hover{
-    box-shadow: 0 0 8px #000;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }

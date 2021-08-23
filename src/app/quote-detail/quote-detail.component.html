@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5><b>Author</b> {{quote.author}}</h5>
+        <h5><b>Name</b> {{quote.name}}</h5>
+        <p class="card-text"><em>{{quote.description}}</em></p>
+      <button class="btn btn-success" (click) = 'upVoteFunction()'><i class="fas fa-thumbs-up"></i>{{upvote}}</button>
+        <button class="btn btn-primary" (click)='downVoteFunction()' > <i class="fas fa-thumbs-down"></i>{{downvote}}</button>
+        <button class="btn btn-danger" (click)='quoteComplete(true)'><i class="far fa-trash-alt"></i></button>
+        <h6>Posted {{quote.showDate | dateCount}} ago</h6>
+    </div>
+  </div>
+

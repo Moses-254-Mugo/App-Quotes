@@ -1,13 +1,15 @@
 export class Quote {
-    public author: string;
-    public name:  string;
-    public description: string;
-
+    
+    // public upvote: number;
+    // public downvote: number;
     showDescription: boolean;
-    constructor (author: string,  name: string, description: string){
-        this.author = author;
-        this.name = name;
-        this.description = description;
-
+  static id: number;
+  static showDate: Date;
+    constructor (public id: number, public author: string, public name:  string, public description: string, public showDate: Date){
+        this.showDescription = false;
+        
     }
+
+
+
 }

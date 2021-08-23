@@ -1,32 +1,12 @@
-<div class="container-fluid" id="display-Quotes">
-    <h1 class="text-center">Quotes</h1>
-    <hr>
-    <div class="row">
-        <div class="col-sm-3"></div>
-      <div class="col-sm-6">
-        <div *ngFor='let quote of list_of_quotes;let i = index'>
-          <div id="output-quotes" >
-            <h5><em>{{quote.author}}</em></h5>
-            <button (click)='toggleDetails(i)' class="btn btn-primary">View More..</button>
-          </div>
-          <div id="output-quotes" >
-            <h5><em>{{quote.name}}</em></h5>
-            <button (click)='toggleDetails(i)' class="btn btn-primary">View More..</button>
-          </div>
-          <div id="output-quotes" >
-            <h5><em>{{quote.description}}</em></h5>
-            <button (click)='toggleDetails(i)' class="btn btn-primary">View More..</button>
-          </div>
-  
-          <div *ngIf='quote.showDescription'>
-            <app-quote-details *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteQuote($event, i)'></app-quote-details>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3"></div>
-    </div>
-  
-    <p *ngIf='quotes.length > 5'>You have too many goals</p>
-  </div>
 
+<app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+<div class="content">
+    <h1 *ngFor='let quotes of quote; let i = index'>
+        <h5>{{quotes.name}}</h5>
+        <h5>Posted on{{quotes.showDate | date}}</h5>
+        <button class="btn btn-success" (click)='toggleDetail(i)' >Display</button>
+        <app-quote-detail *ngIf='quotes.showDescription' [quote]='quotes' (isComplete)='completQuote($event, i)' ></app-quote-detail>
+        
 
+    </h1>
+</div>
